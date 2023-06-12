@@ -1,0 +1,54 @@
+.body {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  height: 100px;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
+
+.container {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+
+  background-color: greenyellow;
+  padding: 10px;
+  border: 2px solid black;
+  display: grid;
+  grid-gap: 20px;
+
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.one {
+  border: 2px solid black; 
+  background-color: lightgreen;
+}
+
+.two {
+  border: 2px solid black;
+  background-color: lightgreen; 
+}
+
+.three {
+  border: 2px solid black;
+  background-color: lightgreen;
+}
+
+.four {
+  border: 2px solid black;
+  background-color: lightgreen;
+}
+
+.post {
+  grid-column: auto;
+  grid-row: 2;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
